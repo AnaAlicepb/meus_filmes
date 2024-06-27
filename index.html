@@ -1,62 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estrelas Além do Tempo</title>
-  <link rel="stylesheet" href="./dist/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>HN Filmes</title>
+    <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 <body>
-  <header class="hero">
-    <nav class="main-nav">
-      <ul>
-        <li><a class="audience-link" href="https://www.adorocinema.com/filmes/filme-219070/criticas/espectadores/" target="_blank"> Espectadores</a></li>
-        <li><a class="press-link" href="https://www.adorocinema.com/filmes/filme-219070/criticas/imprensa/" target="_blank">Imprensa</a></li>
-        <li><a class="curiosities-link" href="https://www.adorocinema.com/filmes/filme-219070/curiosidades/" target="_blank">Curiosidades</a></li>
-      </ul>
-
-      <div class="user-actions">
-        <a href="#" class="sign-up">Entrar</a>
-      </div>
-    </nav>
-    <div class="overlay"></div> <!-- Sobreposição para garantir legibilidade do texto -->
-    <div class="hero__content">
-      <h1 class="hero__title">Estrelas Além do Tempo</h1>
-      <h2 class="hero__subtitle"></h2>
-      <p class="hero__description">A história fenomenal das matemáticas negras que levaram o homem para a lua Durante a Segunda Guerra Mundial, a incipiente indústria aeronáutica americana contratou matemáticas negras para suprir sua falta de mão de obra. Essas mulheres, conhecidas como "computadores humanos".</p>
-      <div class="hero__ratings">
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-      </div>
-      <div class="hero__buttons">
-        <a href="https://www.disneyplus.com/pt-br/movies/-/2xa2YdiOJXQt?irclickid=XaNQNfSasxyPWsqzf0SlARtzUkHWC2SmbV6y2c0&irgwc=1&cid=DSS-Affiliate-Impact-Content-adorocinema+integra%C3%A7%C3%A3o+nativa-564546&tgclid=01010022-13ae-4f1c-9e00-0bfb6621b60c&dclid=CPmAi6H-zIUDFcBU3QId638Jag" target="_blank" class="button watch-now">ASSISTIR</a>
-        <a href="https://www.dailymotion.com/video/x88p21z" target="_blank" class="button trailer">TRAILER</a>
-      </div>
-
-    </div>
-    <div class="thumbnail-row">
-        <a href="https://www.dailymotion.com/video/x88p2ry" target="_blank" class="keven">
-          <img src="./src/images/keven.jpg" alt="keven" class="thumbnail__image">
-          <button class="thumbnail__title">Entrevista 01</button>
-        </a>
-        <a href="https://www.dailymotion.com/video/x88p2sj" target="_blank" class="thumbnail">
-          <img src="./src/images/meninas.jpg" alt="Thumbnail 2" class="thumbnail__image">
-          <button class="thumbnail__title">Entrevista 02</button>
-        </a>
-        <a href="https://www.dailymotion.com/video/x88p4i2" target="_blank" class="thumbnail">
-            <img src="./src/images/Pharrell.jpg" alt="Thumbnail 4" class="thumbnail__image">
-            <button class="thumbnail__title">Entrevista 03</button>
-          </a>
-        <a href="https://www.dailymotion.com/video/x88p3y5" target="_blank" class="thumbnail">
-          <img src="./src/images/making -of.jpg" alt="Thumbnail 3" class="thumbnail__image">
-          <button class="thumbnail__title"> Making of</button>
-        </a>
-      </div>
-
-    </div>
-  </header>
- </body>
+    <header class="header">
+        <div class="header-content">
+            <div class="menu-icon">
+                <img src="./src/images/logo_nova1_s.png" alt="Logo">
+            </div>
+            <div class="logo">
+                <span class="hn">HN-</span>
+            </div>
+            <div class="login">
+                <img src="./src/images/icones/icon.png" alt="Logo">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <h1>Bem vindo ao Hanna Filmes!</h1>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="./src/images/carousel/Alexandre_grande.jpeg" alt="Alexandre">
+                    <h3>Alexandre</h3>
+                    <p>"Um túmulo basta agora aquele para quem não bastava o mundo inteiro. Vence o medo e vencerás a morte."</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./src/images/carousel/cruzada.jpg" alt="Cruzada">
+                    <h3>Cruzada</h3>
+                    <p>"Nós somos homens de ação, mentiras não nos servem."</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./src/images/carousel/troia.png" alt="Troia">
+                    <h3>Tróia</h3>
+                    <p>"Quando se é rei poucas escolhas são simples".</p>
+                </div>
+            </div>
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
+        </div>
+        <section class="top-movies">
+            <h2>Filmes em Alta</h2>
+            <div class="movies-grid">
+                <div class="movie-card">
+                    <img src="./src/images/a_dama_de_ferro.jpg" alt="A Dama de Ferro">
+                    <p data-full-title="A Dama de Ferro">A Dama de Ferro</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-127404/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/Ada.png" alt="Ada">
+                    <p data-full-title="Ada Lovelace">Ada Lovelace</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-32921/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/Althea.jpg" alt="Althea">
+                    <p data-full-title="Althea">Althea</p>
+                    <a href="https://www.justwatch.com/br/filme/althea" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/evita.jpg" alt="Evita">
+                    <p data-full-title="Evita">Evita</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-25861/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/madame-curie.jpg" alt="Madame Curie">
+                    <p data-full-title="Madame Curie">Madame Curie</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-201220/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/piaf.jpg" alt="Piaf">
+                    <p data-full-title="Piaf">Piaf</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-59578/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/tina1.jpg" alt="Tina">
+                    <p data-full-title="Tina">Tina</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-8350/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/estrelas.png" alt="Estrelas Além do Tempo">
+                    <p data-full-title="Estrelas Além do Tempo">Estrelas Além do Tempo</p>
+                    <a href="https://www.adorocinema.com/pesquisar/?q=Estrelas+Al%C3%A9m+do+Tempo" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/A_cor_Purpura.png" alt="A Cor Púrpura">
+                    <p data-full-title="A Cor Púrpura">A Cor Púrpura</p>
+                    <a href="https://www.adorocinema.com/pesquisar/?q=A+Cor+P%C3%BArpura" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/fred.png" alt="Bohemian Rhapsody">
+                    <p data-full-title="Bohemian Rhapsody">Bohemian Rhapsody</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-185719/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/elton.png" alt="Rocketman">
+                    <p data-full-title="Rocketman">Rocketman</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-197810/" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/whitney.jpg" alt="Wanna Dance with Somebody">
+                    <p data-full-title="Wanna Dance with Somebody">Wanna Dance with Somebody</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-282299/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/O_ Amor_ nos_ tempo _de _Cólera.png" alt="O Amor nos tempo de Cólera">
+                    <p data-full-title="O Amor nos tempo de Cólera">O Amor nos tempo de Cólera</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-109071/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/Desafiando.jpg" alt="Desafiando Gigantes">
+                    <p data-full-title="Desafiando Gigantes">Desafiando Gigantes</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-120804/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+                <div class="movie-card">
+                    <img src="./src/images/Memorias.jpg" alt="Memórias de uma Gueixa">
+                    <p data-full-title="Memórias de uma Gueixa">Memórias de uma Gueixa</p>
+                    <a href="https://www.adorocinema.com/filmes/filme-28572/" target="_blank" class="like-button">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 HN Filmes. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://github.com/AnaAlicepb" target="_blank"><img src="./src/images/icones/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/anaalice20/" target="_blank"><img src="./src/images/icones/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    <script src="./src/scripts/scripts.js"></script>
+</body>
 </html>
