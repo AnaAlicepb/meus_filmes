@@ -6,7 +6,7 @@
     <meta name="description" content="Projeto Meus Filmes">
     <meta name="keywords" content="Filmes, Responsivo, SCSS, Gulp, Visual Studio Code">
     <meta name="author" content="Ana Alice Rodrigues">
-    <title>Meus Filmes</title>
+    
 </head>
 <body>
 
